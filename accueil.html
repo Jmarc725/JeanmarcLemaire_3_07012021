@@ -10,16 +10,17 @@
         <script src="https://kit.fontawesome.com/d8dfc5c0e3.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        
         <header>
             <div class="logo">
-                <img href="maquettes/images/logo/ohmyfood.png" alt="logo">
+                <img src="images/logo/ohmyfood.png" alt="logo">
             </div>
             <div class="location">
                 <i class="fas fa-map-marker-alt"></i>
                 <p>Paris, Belleville</p>
             </div>
-            <div class="explorer-restaurant-wrapper">
-                <div class="header-headings">
+            <div class="explorer-restaurant-container">
+                <div class="header">
                     <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 </div>
@@ -28,41 +29,101 @@
                 </div>
             </div>
         </header>
-        <section class="fonctionnement">
+        
+        <section class="fonctionnement-container">
             <h2>Fonctionnement</h2>
-            <div class="wrapper-fonctionnement">
-                <div class="boutton-inactif">
-                    <div class="numero-list">
-                        <p>1</p>
-                    </div>
-                    <div class="smartphone-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <p>Choisissez un restayrant</p>
+            <div class="boutton-inactif-wrapper">
+                <div class="smartphone-icon">
+                    <i class="fas fa-mobile-alt"></i>
                 </div>
+                <p>Choisissez un restayrant</p>
             </div>
-            <div class="wrapper-fonctionnement">
-                <div class="boutton-inactif">
-                    <div class="numero-list">
-                        <p>2</p>
-                    </div>
-                    <div class="menu-icon">
-                        <i class="fas fa-list"></i>                    
-                        <p>Composez votre menu</p>
-                    </div>
+            <p class="numero-list">1</p>
+            
+            <div class="boutton-inactif-wrapper">
+                <div class="smartphone-icon">
+                    <i class="fas fa-mobile-alt"></i>
                 </div>
+                <p>Choisissez un restayrant</p>
             </div>
-            <div class="wrapper-fonctionnement">
-                <div class="boutton-inactif">
-                    <div class="numero-list">
-                        <p>3</p>
-                    </div>
-                    <div class="store-icon">
-                        <i class="fas fa-store"></i>                        
-                        <p>Dégustez un restaurant </p>
-                    </div>
+            <p class="numero-list">2</p>
+                
+            <div class="boutton-inactif-wrapper">
+                <div class="store-icon">
+                    <i class="fas fa-store"></i>
                 </div>
+                <p>Dégustez un restaurant </p>
             </div>
+            <p class="numero-list">3</p>
         </section>
+
+        <main class="restaurants-container">
+            <h2>Restaurants</h2>
+            <div class="diaporama-restaurant">
+                <div class="diaporama-restaurant__image">
+                    <a href="#"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo-restaurant"></a>
+                </div>
+                <div class="infos-container">
+                    <div class="diaporama-restaurants__infos">
+                        <a href="#"><h3 class="diaporam-restaurant__headings">La palette du goût</h3></a>
+                        <a href="#"><p class="diaporam-restaurant__byline">Ménilmontant</p></a>
+                    </div>
+                </div>
+                <div class="coeur-icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="diaporama-restaurant">
+                <div class="diaporama-restaurant__image">
+                    <a href="#"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo-restaurant"></a>
+                </div>
+                <div class="infos-container">
+                    <div class="diaporama-restaurants__infos">
+                        <a href="#"><h3 class="diaporam-restaurant__headings">La palette du goût</h3></a>
+                        <a href="#"><p class="diaporam-restaurant__byline">Ménilmontant</p></a>
+                    </div>
+                </div>
+                <div class="coeur-icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="diaporama-restaurant">
+                <div class="diaporama-restaurant__image">
+                    <a href="#"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo-restaurant"></a>
+                </div>
+                <div class="infos-container">
+                    <div class="diaporama-restaurants__infos">
+                        <a href="#"><h3 class="diaporam-restaurant__headings">La palette du goût</h3></a>
+                        <a href="#"><p class="diaporam-restaurant__byline">Ménilmontant</p></a>
+                    </div>
+                </div>
+                <div class="coeur-icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="diaporama-restaurant">
+                <div class="diaporama-restaurant__image">
+                    <a href="#"></a><img src="maquettes/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-restaurant"></a>
+                </div>
+                <div class="infos-container">
+                    <div class="diaporama-restaurants__infos">
+                        <a href="#"><h3 class="diaporam-restaurant__headings">La palette du goût</h3></a>
+                        <a href="#"><p class="diaporam-restaurant__byline">Ménilmontant</p></a>
+                    </div>
+                </div>
+                <div class="coeur-icon">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h4>ohmyfood</h4>
+            <ul>
+                <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+        </footer>
     </body>
 </html>

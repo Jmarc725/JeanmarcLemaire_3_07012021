@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+
+/* logo */
+
+.logo {
+    box-shadow: 0 .15rem .50rem rgb(209, 208, 208);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.logo img {
+    width: 45%;
+}
+
+/* location */
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.location i {
+    margin-right: 20px;
+}
+
+.header {    
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 25px;
+}
+
+.header p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+.header h1 {
+    font-size: 1.7em;
+    line-height: 1.2em;
+
+}
+
+/* button */
+
+.btn {
+    background-color: #FF79DA;
+    padding: 2px;
+    margin: 0 80px;
+    border: 0.1px solid white;
+    border-radius: 50px 50px 50px 50px;
+    margin-bottom: 15px;
+    box-shadow: 0 .2rem .4rem rgb(223, 220, 220);
+}
+
+.btn p {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+.explorer-restaurant-container {
+    background-color: rgba(5, 5, 5, 0.05);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

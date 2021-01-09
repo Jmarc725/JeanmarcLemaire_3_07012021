@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'shrikhand', cursive;
+    font-size: 1.7em;
+}
+
+
+/* header */
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 45%;
+}
+
+.logo i {
+    margin-left: 20px;
+    margin-right: 65px;
+    color: black;
+}
+
+.img-francaise {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* main */
+
+
+.wrapper-main {
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+}
+
+.wrapper-menu {
+    width: 90%;
+    margin: auto;
+}
+
+.nom-restaurant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nom-restaurant i {
+    font-size: 1.2em;
+}
+
+.meal-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    line-height: 0.5em;
+    width: 100%;
+    margin: 0;
+
+}

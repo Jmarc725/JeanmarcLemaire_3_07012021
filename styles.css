@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+i {
+    font-size: 1.4em;
+}
+
 
 /* logo */
 
@@ -103,13 +107,13 @@ a {
 }
 
 
-
 /* section fonctionnement */
 
 .fonctionnement-container {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .boutton-inactif-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -159,6 +163,7 @@ a {
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 0 .2rem .4rem rgb(223, 220, 220);
+    position: relative;
 }
 
 .diaporama-restaurant img {
@@ -186,7 +191,57 @@ a {
     margin-right: 15px;
 }
 
-.coeur-icon i:hover {
+.coeur-icon:hover {
     cursor: pointer;
     color: #9356DC;
+}
+
+.nouveau {
+    color: green;
+    background-color: #99E2D0;
+    font-size: 0.8em;
+    padding: 8px 13px;
+    border-radius: 5px;
+    position:absolute;
+    top: 0;
+    right: 12px;
+}
+
+
+/* footer */
+
+footer {
+    background-color:rgba(5, 5, 5, 0.8);
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+footer a, footer i, .ohmyfood {
+    color: white;
+}
+
+footer p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+footer i {
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.ohmyfood {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.2em;
+}
+
+.contact {
+    margin-top: 12px;
 }

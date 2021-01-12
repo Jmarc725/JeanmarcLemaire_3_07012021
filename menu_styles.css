@@ -34,7 +34,7 @@ h1 {
     color: black;
 }
 
-.img-francaise {
+.img-header {
     width: 100%;
     margin-top: 20px;
     z-index: 1;
@@ -144,8 +144,6 @@ footer {
     padding-left: 25px;
     padding-top: 15px;
     padding-bottom: 20px;
-    position: absolute;
-    bottom: 0;
 }
 
 .flex-footer {
@@ -164,8 +162,13 @@ footer p {
 }
 
 footer i {
-    margin-right: 10px;
+    margin-right: 15px;
     font-size: 0.8em;
+}
+
+.fa-hands-helping {
+    font-size: 0.7em;
+    margin-right: 12px;
 }
 
 .ohmyfood {

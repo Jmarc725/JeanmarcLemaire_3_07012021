@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/base/_index.scss",
+        "../scss/base/_color-variables.scss",
+        "../scss/base/_font-variables.scss",
+        "../scss/base/_normalize.scss",
+        "../scss/components/_index.scss",
+        "../scss/layout/_index.scss",
+        "../scss/pages/_index.scss",
+        "../scss/utils/_index.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

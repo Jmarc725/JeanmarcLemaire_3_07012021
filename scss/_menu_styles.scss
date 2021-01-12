@@ -40,7 +40,6 @@ h1 {
     z-index: 1;
 }
 
-
 /* main */
 
 
@@ -50,9 +49,7 @@ h1 {
     padding-top: 10px;
     width: 100%;
     margin-top: -50px;
-    position: absolute;
-    top: 300px;
-    z-index: 10;
+    position: relative;
 }
 
 .restaurant {
@@ -83,9 +80,19 @@ h1 {
     font-stretch: extra-condensed;
     text-transform: uppercase;
     opacity: 0.6;
-    border-bottom: 4px solid #99E2D0;
     padding-bottom: 5px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.menu__heading::after {
+    position: absolute;
+    height: 2.5px;
+    width: 40px;
+    background-color: #99E2D0;
+    content: "";
+    bottom: -5px;
+    left: 0;
 }
 
 .menu__items {
@@ -110,6 +117,7 @@ h1 {
     font-size: 0.9em;
     font-weight: 100;
 }
+
 
 /* buttob */
 

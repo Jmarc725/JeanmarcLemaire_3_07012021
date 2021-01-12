@@ -11,6 +11,7 @@ body {
 h1 {
     font-family: 'shrikhand', cursive;
     font-size: 1.7em;
+    font-weight: 300;
 }
 
 
@@ -24,7 +25,7 @@ h1 {
 }
 
 .logo img {
-    width: 45%;
+    width: 40%;
 }
 
 .logo i {
@@ -36,42 +37,142 @@ h1 {
 .img-francaise {
     width: 100%;
     margin-top: 20px;
+    z-index: 1;
 }
 
 
 /* main */
 
 
-.wrapper-main {
-    background-color: white;
+.main {
+    background-color: rgb(248, 248, 248);
     border-radius: 40px 40px 0 0;
     padding-top: 10px;
     width: 100%;
+    margin-top: -50px;
     position: absolute;
-    top: 250px;
+    top: 300px;
+    z-index: 10;
 }
 
-.wrapper-menu {
-    width: 90%;
-    margin: auto;
-}
-
-.nom-restaurant {
+.restaurant {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.nom-restaurant i {
+.restaurant i {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-right: 20px;;
+}
+
+/* menu */
+
+.menu {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.menu__heading {
+    font-size: 1.1em;
+    font-weight: 200;
+    font-stretch: extra-condensed;
+    text-transform: uppercase;
+    opacity: 0.6;
+    border-bottom: 4px solid #99E2D0;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.menu__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 0.5em;
+    margin: 0;
+    background-color: white;
+    padding: 3px 12px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0 .2rem .6rem rgb(223, 220, 220);
+}
+
+.plat__heading {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.plat__garniture {
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+/* buttob */
+
+.btn {
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    width: 50%;
+    padding: 2px;
+    margin: 20px auto;
+    border: 0.1px solid white;
+    border-radius: 50px 50px 50px 50px;
+    margin-bottom: 15px;
+    box-shadow: 0 .2rem .4rem rgb(223, 220, 220);
+    transition: transform 400ms;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.btn p {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+
+/* footer */
+
+footer {
+    background-color:rgba(5, 5, 5, 0.8);
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+footer a, footer i, .ohmyfood {
+    color: white;
+}
+
+footer p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+footer i {
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.ohmyfood {
+    font-family: 'Shrikhand', cursive;
     font-size: 1.2em;
 }
 
-.meal-item {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    line-height: 0.5em;
-    width: 100%;
-    margin: 0;
-
+.contact {
+    margin-top: 12px;
 }

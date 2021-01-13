@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+h1 {
+    @include heading-font;
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

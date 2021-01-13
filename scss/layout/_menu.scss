@@ -1,25 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'roboto', sans-serif;
-    font-size: 1em;
-    margin: 0;
-}
-
-h1 {
-    font-family: 'shrikhand', cursive;
-    font-size: 1.7em;
-    font-weight: 300;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-
 /* header */
 
 .logo {
@@ -122,32 +100,6 @@ a {
     font-size: 0.9em;
     font-weight: 100;
 }
-
-
-/* buttob */
-
-.btn {
-    @include linear-gradient;    
-    width: 50%;
-    padding: 2px;
-    margin: 20px auto;
-    border: 0.1px solid white;
-    border-radius: 50px 50px 50px 50px;
-    margin-bottom: 15px;
-    @include box-shadow;
-    transition: transform 400ms;
-}
-
-.btn:hover {
-    @include button-hover;
-}
-
-.btn p {
-    text-align: center;
-    color: white;
-    font-size: 1em;
-}
-
 
 /* footer */
 

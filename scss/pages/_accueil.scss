@@ -1,3 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+i {
+    font-size: 1.4em;
+}
+
+
 /* logo */
 
 .logo {
@@ -51,19 +80,32 @@
     padding-bottom: 30px;
 }
 
+
 /* button */
 
 .btn {
-    @include linear-gradient; 
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     width: 55%;
     padding: 2px;
     margin: auto;
     border: 0.1px solid white;
     border-radius: 50px 50px 50px 50px;
     margin-bottom: 15px;
-    @include box-shadow;  
+    box-shadow: 0 .2rem .4rem rgb(223, 220, 220);
     transition: transform 400ms;
 }
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.btn p {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
 
 /* section fonctionnement */
 
@@ -81,7 +123,7 @@
     background-color: rgba(5, 5, 5, 0.05);
     padding: 10px;
     border-radius: 20px;
-    @include box-shadow;
+    box-shadow: 0 .2rem .6rem rgb(223, 220, 220);
     position: relative;
 }
 
@@ -104,6 +146,7 @@
     left: -35px;
 }
 
+
 /* main */
 
 .restaurants-container {
@@ -119,7 +162,7 @@
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
-    @include box-shadow;    
+    box-shadow: 0 .2rem .4rem rgb(223, 220, 220);
     position: relative;
 }
 
@@ -150,16 +193,60 @@
 
 .coeur-icon:hover {
     cursor: pointer;
-    color: $primary;
+    color: #9356DC;
 }
 
 .nouveau {
     color: green;
-    background-color: $tertiary;
+    background-color: #99E2D0;
     font-size: 0.8em;
     padding: 8px 13px;
     border-radius: 5px;
-    position: absolute;
+    position:absolute;
     top: 0;
     right: 12px;
+}
+
+
+/* footer */
+
+footer {
+    background-color:rgba(5, 5, 5, 0.8);
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+footer a, footer i, .ohmyfood {
+    color: white;
+}
+
+footer p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+footer i {
+    margin-right: 15px;
+    font-size: 0.8em;
+}
+
+.fa-hands-helping {
+    font-size: 0.7em;
+    margin-right: 12px;
+}
+
+.ohmyfood {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.2em;
+}
+
+.contact {
+    margin-top: 12px;
 }

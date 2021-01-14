@@ -4,12 +4,8 @@
     "sources": [
         "../scss/main.scss",
         "../scss/base/_index.scss",
-        "../scss/base/_accueil.scss",
-        "../scss/base/_menu.scss",
         "../scss/components/_index.scss",
-        "../scss/components/_menu.scss",
         "../scss/layout/_index.scss",
-        "../scss/layout/_menu.scss",
         "../scss/pages/_index.scss",
         "../scss/pages/_accueil.scss",
         "../scss/utils/_index.scss",

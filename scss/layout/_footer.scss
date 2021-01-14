@@ -1,0 +1,40 @@
+footer {
+    background-color:rgba(5, 5, 5, 0.8);
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+footer a, footer i, .ohmyfood {
+    color: white;
+}
+
+footer p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+footer i {
+    margin-right: 15px;
+    font-size: 0.8em;
+}
+
+.fa-hands-helping {
+    font-size: 0.7em;
+    margin-right: 12px;
+}
+
+.ohmyfood {
+    @include heading-font;
+    font-size: 1.2em;
+}
+
+.contact {
+    margin-top: 12px;
+}

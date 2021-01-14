@@ -1,0 +1,49 @@
+.menu {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.menu__heading {
+    font-size: 1.1em;
+    font-weight: 200;
+    font-stretch: extra-condensed;
+    text-transform: uppercase;
+    opacity: 0.6;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu__heading::after {
+    position: absolute;
+    height: 2.5px;
+    width: 40px;
+    background-color: $tertiary;
+    content: "";
+    bottom: -5px;
+    left: 0;
+}
+
+.menu__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 0.5em;
+    margin: 0;
+    background-color: white;
+    padding: 3px 12px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    @include box-shadow;
+}
+
+.plat__heading {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.plat__garniture {
+    font-size: 0.9em;
+    font-weight: 100;
+}

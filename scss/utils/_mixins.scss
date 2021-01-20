@@ -5,3 +5,8 @@
 @mixin linear-gradient {
     background-image: linear-gradient(to bottom right, $primary, $secondary);
 }
+
+@mixin button-hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

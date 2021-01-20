@@ -130,11 +130,16 @@ a {
     @include linear-gradient;    
     width: 50%;
     padding: 2px;
-    margin: auto;
+    margin: 20px auto;
     border: 0.1px solid white;
     border-radius: 50px 50px 50px 50px;
     margin-bottom: 15px;
     @include box-shadow;
+    transition: transform 400ms;
+}
+
+.btn:hover {
+    @include button-hover;
 }
 
 .btn p {

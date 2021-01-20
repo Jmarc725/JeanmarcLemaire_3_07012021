@@ -7,6 +7,11 @@
     border: 0.1px solid white;
     border-radius: 50px 50px 50px 50px;
     margin-bottom: 15px;
+    transition: transform 400ms;
+}
+
+.btn:hover {
+    @include button-hover;
 }
 
 .btn p {

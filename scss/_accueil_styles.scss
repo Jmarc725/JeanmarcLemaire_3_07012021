@@ -8,15 +8,6 @@ body {
     margin: 0;
 }
 
-h2 {
-    font-size: 1.4em;
-    margin-left: 20px;
-}
-
-h3 {
-    font-size: 1.1em;
-}
-
 a {
     color: black;
     text-decoration: none;
@@ -29,8 +20,9 @@ i {
 
 /* logo */
 
-.logo {
+.logo--home {
     box-shadow: 0 .15rem .50rem rgb(209, 208, 208);
+    margin: auto;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 15px;
@@ -58,18 +50,21 @@ i {
 
 .header {    
     text-align: center;
-    padding-left: 35px;
-    padding-right: 35px;
+    margin: auto;
     margin-bottom: 25px;
 }
 
 .header p {
+    width: 85%;
+    margin: auto;
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.1em;
     line-height: 1.2em;
 }
 
-.header h1 {
+.header-headings-home {
+    width: 75%;
+    margin: auto;
     font-size: 1.5em;
     line-height: 1.2em;
 }
@@ -83,21 +78,8 @@ i {
 
 /* button */
 
-.btn {
-    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+.btn-bigger-btn {
     width: 55%;
-    padding: 2px;
-    margin: auto;
-    border: 0.1px solid white;
-    border-radius: 50px 50px 50px 50px;
-    margin-bottom: 15px;
-    box-shadow: 0 .2rem .4rem rgb(223, 220, 220);
-    transition: transform 400ms;
-}
-
-.btn:hover {
-    cursor: pointer;
-    transform: scale(1.2);
 }
 
 .btn p {
@@ -119,7 +101,7 @@ i {
     justify-content: flex-start;
     align-items: center;
     width: 85%;
-    margin: 25px auto;
+    margin: 30px auto;
     background-color: rgba(5, 5, 5, 0.05);
     padding: 10px;
     border-radius: 20px;
@@ -149,7 +131,7 @@ i {
 
 /* main */
 
-.restaurants-container {
+main {
     background-color: rgba(5, 5, 5, 0.05);
     padding-top: 40px;
     padding-bottom: 40px;
@@ -173,7 +155,7 @@ i {
     border-radius: 20px 20px 0 0;
 }
 
-.infos-container {
+.diaporama-restaurant__legend {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,7 +165,7 @@ i {
     border-radius: 0 0 15px 15px;
 }
 
-.infos-container p {
+.diaporama-restaurant__name p {
     font-weight: 100;
 }
 

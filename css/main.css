@@ -167,7 +167,7 @@ footer i {
 }
 
 /* logo */
-.logo--home {
+.logo-home {
   -webkit-box-shadow: 0 0.15rem 0.5rem #d1d0d0;
           box-shadow: 0 0.15rem 0.5rem #d1d0d0;
   margin: auto;
@@ -176,7 +176,7 @@ footer i {
   padding-bottom: 15px;
 }
 
-.logo--home img {
+.logo-home img {
   width: 50%;
 }
 
@@ -215,7 +215,7 @@ footer i {
 }
 
 .header-headings-home {
-  width: 75%;
+  width: 70%;
   margin: auto;
   margin-bottom: 20px;
   font-size: 1.5em;
@@ -241,7 +241,7 @@ footer i {
 
 /* section fonctionnement */
 .titre-section {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 600;
   margin-left: 20px;
 }

@@ -173,11 +173,11 @@ footer i {
 
 .menu__heading::after {
   position: absolute;
-  height: 2.5px;
-  width: 40px;
+  height: 4px;
+  width: 45px;
   background-color: #99E2D0;
   content: "";
-  bottom: -5px;
+  bottom: -3.5px;
   left: 0;
 }
 

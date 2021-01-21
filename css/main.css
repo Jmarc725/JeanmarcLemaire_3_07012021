@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,6 +15,21 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1024px) {
+  .francaise {
+    display: contents;
+  }
+  .delice-gout {
+    display: contents;
+  }
+  .note-enchantée {
+    display: contents;
+  }
+  .palette-gout {
+    display: contents;
+  }
+}
+
 .btn {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(to bottom right, #9356DC, #FF79DA);
@@ -25,6 +41,32 @@ a {
   border: 0.1px solid white;
   border-radius: 50px 50px 50px 50px;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0.3rem 0.5rem #dfdcdc;
+          box-shadow: 0 0.3rem 0.5rem #dfdcdc;
+}
+
+.btn:hover .btn__bg {
+  opacity: 1;
+}
+
+.btn__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
 }
 
 .btn p {

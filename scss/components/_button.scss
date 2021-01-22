@@ -24,7 +24,6 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: lighten(linear-gradient(to bottom right, $primary, $secondary)5);
         opacity: 0;
         z-index: -1;
         transition: opacity 300ms;

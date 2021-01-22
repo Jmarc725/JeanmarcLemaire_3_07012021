@@ -1,6 +1,11 @@
 .plat__heading {
     font-size: 1.1em;
     font-weight: 500;
+    &--bigger {
+        line-height: 1.3em;
+        margin-bottom: -5px;
+        margin-top: 8px;
+    }
 }
 
 .plat__garniture {

@@ -15,14 +15,16 @@
     margin-right: 20px;
 }
 
-.restaurant i {
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-right: 20px;;
-}
 
 .fa-heart {
-    background-color: red;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 500ms;
+    &:active {
+        color: $primary;
+    }
 }
 
 .header-headings {
@@ -63,6 +65,7 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+    cursor: pointer;
     line-height: 0.5em;
     margin: 0;
     background-color: white;
@@ -70,8 +73,11 @@
     margin-bottom: 15px;
     border-radius: 20px;
     @include box-shadow;
-    animation: dish-confirmation
-}
+    // &:active + .dish-confirmation {
+    //     transform: translateX(0);
+    //     transition: transform 200ms;
+    }
+
 
 .dish-confirmation {
     position: absolute;
@@ -81,6 +87,10 @@
     height: 73px;
     background-color: $tertiary;
     border-radius: 0 20px 20px 0;
+    // transform: translateX(500px);
+    &--bigger {
+        height: 94px;
+    }
 }
 
 .fa-check-circle {
@@ -89,16 +99,15 @@
     top: 22px;
     right: 20px;
     font-size: 1.6em;
+    &--translate {
+        top: 33px;
+    }
 }
 
-@keyframes dish-confirmations {
-    0% {
-        transform: translateX(1000px);
-    }
-    100% {
-        transform:translateX(0)
-    }
-}
+
+
+
+
 
 @keyframes menu-items {
     0% {}

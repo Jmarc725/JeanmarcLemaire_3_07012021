@@ -78,6 +78,12 @@ a {
   font-weight: 500;
 }
 
+.plat__heading--bigger {
+  line-height: 1.3em;
+  margin-bottom: -5px;
+  margin-top: 8px;
+}
+
 .plat__garniture {
   font-size: 0.9em;
   font-weight: 100;
@@ -182,14 +188,17 @@ footer i {
   margin-right: 20px;
 }
 
-.restaurant i {
+.fa-heart {
   font-size: 1.5em;
   font-weight: 300;
   margin-right: 20px;
+  cursor: pointer;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
 }
 
-.fa-heart {
-  background-color: red;
+.fa-heart:active {
+  color: #9356DC;
 }
 
 .header-headings {
@@ -236,6 +245,7 @@ footer i {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
+  cursor: pointer;
   line-height: 0.5em;
   margin: 0;
   background-color: white;
@@ -244,8 +254,6 @@ footer i {
   border-radius: 20px;
   -webkit-box-shadow: 0 0.2rem 0.4rem #dfdcdc;
           box-shadow: 0 0.2rem 0.4rem #dfdcdc;
-  -webkit-animation: dish-confirmation;
-          animation: dish-confirmation;
 }
 
 .dish-confirmation {
@@ -258,6 +266,10 @@ footer i {
   border-radius: 0 20px 20px 0;
 }
 
+.dish-confirmation--bigger {
+  height: 94px;
+}
+
 .fa-check-circle {
   color: white;
   position: absolute;
@@ -266,26 +278,8 @@ footer i {
   font-size: 1.6em;
 }
 
-@-webkit-keyframes dish-confirmations {
-  0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes dish-confirmations {
-  0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.fa-check-circle--translate {
+  top: 33px;
 }
 
 @-webkit-keyframes menu-items {

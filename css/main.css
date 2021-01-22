@@ -73,15 +73,28 @@ a {
   font-size: 1em;
 }
 
+.plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
 .plat__heading {
   font-size: 1.1em;
   font-weight: 500;
+  margin-top: 10px;
 }
 
 .plat__heading--bigger {
   line-height: 1.3em;
   margin-bottom: -5px;
-  margin-top: 8px;
 }
 
 .plat__garniture {
@@ -306,12 +319,6 @@ footer i {
   overflow: hidden;
 }
 
-.plat {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .menu__items:hover {
   background-color: tomato;
 }
@@ -330,13 +337,13 @@ footer i {
 
 .dish-confirmation {
   width: 65px;
-  height: 73px;
+  height: 68px;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
 }
 
 .dish-confirmation--bigger {
-  height: 94px;
+  height: 90px;
 }
 
 .fa-check-circle {

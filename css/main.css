@@ -282,52 +282,6 @@ footer i {
   top: 33px;
 }
 
-@-webkit-keyframes menu-items {
-  0% {
-  }
-  11% {
-  }
-  22% {
-  }
-  33% {
-  }
-  44% {
-  }
-  55% {
-  }
-  66% {
-  }
-  77% {
-  }
-  88% {
-  }
-  100% {
-  }
-}
-
-@keyframes menu-items {
-  0% {
-  }
-  11% {
-  }
-  22% {
-  }
-  33% {
-  }
-  44% {
-  }
-  55% {
-  }
-  66% {
-  }
-  77% {
-  }
-  88% {
-  }
-  100% {
-  }
-}
-
 /* logo */
 .logo-home {
   -webkit-box-shadow: 0 0.15rem 0.5rem #d1d0d0;

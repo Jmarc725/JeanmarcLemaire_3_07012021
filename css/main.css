@@ -103,7 +103,7 @@ a {
 }
 
 .plat__prix {
-  margin-right: -40px;
+  margin-right: -47px;
 }
 
 .logo {
@@ -323,22 +323,18 @@ footer i {
   overflow: hidden;
 }
 
-.menu__items:hover {
-  background-color: tomato;
-}
-
-.menu__items:hover .anim-confirmation {
+.menu__items:active .anim-confirmation {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
-.menu__items:hover .plat__prix {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  -webkit-transition: 1s;
-  transition: 1s;
+.menu__items:active .plat__prix {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .anim-confirmation {

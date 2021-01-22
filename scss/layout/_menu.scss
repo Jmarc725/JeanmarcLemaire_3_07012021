@@ -106,9 +106,9 @@
     overflow: hidden;
 }
 
-.menu__items:hover {
-    background-color: tomato;
-}
+// .menu__items:hover {
+//     background-color: tomato;
+// }
 
 // .menu__items:nth-of-type(1) {
 //     // background-color: tomato;
@@ -120,14 +120,14 @@
 //     // animation: loadingMenuItems 4s 4s;
 // }
 
-.menu__items:hover .anim-confirmation {
+.menu__items:active .anim-confirmation {
     transform: translateX(0px);
-    transition: 1s;
+    transition: 2s;
 }
 
-.menu__items:hover .plat__prix {
-    transform: translateX(-50px);
-    transition: 1s;
+.menu__items:active .plat__prix {
+    transform: translateX(-60px);
+    transition: 2s;
 }
 
 .anim-confirmation {

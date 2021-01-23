@@ -1,4 +1,27 @@
+.spinner-loading {
+    border: 20px solid #dddddd;
+    border-radius: 50%;
+    border-top-color: $tertiary;    
+    border-bottom-color: $secondary;
+    border-left-color: $primary;
+    border-right-color: $primary;
+    width: 200px;
+    height: 200px;
+    animation: spinner 2s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: wait;
+}
 
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
 /* logo */
 
 .logo-home {

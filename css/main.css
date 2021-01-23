@@ -390,24 +390,43 @@ footer i {
   border-bottom-color: #FF79DA;
   border-left-color: #9356DC;
   border-right-color: #9356DC;
+  position: absolute;
+  top: 40%;
+  left: 30%;
   width: 150px;
   height: 150px;
-  -webkit-animation: spinner 3s linear;
-          animation: spinner 3s linear;
+  z-index: 1;
+  -webkit-animation: spinner 3000ms 1s linear both;
+          animation: spinner 3000ms 1s linear both;
+}
+
+.spinner-loading::before {
+  content: "";
+  border: 20px solid transparent;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  cursor: wait;
+  top: 40%;
+  left: 30%;
+  width: 150px;
+  height: 150px;
+  z-index: 10;
 }
 
 @-webkit-keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: .8;
+  }
+  75% {
+    opacity: 1;
   }
   100% {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
+    opacity: 0;
   }
 }
 
@@ -415,18 +434,31 @@ footer i {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: .8;
+  }
+  75% {
+    opacity: 1;
   }
   100% {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
+    opacity: 0;
   }
 }
 
 #content {
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-  -webkit-animation: content 3s;
-          animation: content 3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  -webkit-animation: content 0s 3s both;
+          animation: content 0s 3s both;
 }
 
 @-webkit-keyframes content {

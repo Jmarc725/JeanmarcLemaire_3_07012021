@@ -9,24 +9,10 @@
     margin-bottom: 15px;
     position: relative;
     z-index: 1;
-      
-
-    &:hover {
+        &:hover {
         cursor: pointer;
-        box-shadow: 0 .3rem .5rem rgb(223, 220, 220);
-        & .btn__bg {
-            opacity: 1;
-        }
-    }
-    &__bg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 300ms;
+        box-shadow: 0 .6rem .4rem rgb(223, 220, 220);
+        opacity: 0.7;
     }
 
     & p {
@@ -35,3 +21,18 @@
         font-size: 1em;
     }
 }
+
+     //     & .btn__bg {
+    //         opacity: 1;
+    //     }
+    // }
+    // &__bg {
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     opacity: 0;
+    //     z-index: -1;
+    //     transition: opacity 300ms;
+    // }

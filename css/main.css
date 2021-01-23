@@ -47,24 +47,9 @@ a {
 
 .btn:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0.3rem 0.5rem #dfdcdc;
-          box-shadow: 0 0.3rem 0.5rem #dfdcdc;
-}
-
-.btn:hover .btn__bg {
-  opacity: 1;
-}
-
-.btn__bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: opacity 300ms;
-  transition: opacity 300ms;
+  -webkit-box-shadow: 0 0.6rem 0.4rem #dfdcdc;
+          box-shadow: 0 0.6rem 0.4rem #dfdcdc;
+  opacity: 0.7;
 }
 
 .btn p {
@@ -516,6 +501,7 @@ footer i {
           align-items: baseline;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: transparent;
 }
 
 .location i {

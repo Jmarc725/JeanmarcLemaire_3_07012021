@@ -390,10 +390,10 @@ footer i {
   border-bottom-color: #FF79DA;
   border-left-color: #9356DC;
   border-right-color: #9356DC;
-  width: 200px;
-  height: 200px;
-  -webkit-animation: spinner 2s infinite linear;
-          animation: spinner 2s infinite linear;
+  width: 150px;
+  height: 150px;
+  -webkit-animation: spinner 3s linear;
+          animation: spinner 3s linear;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -419,6 +419,35 @@ footer i {
   100% {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
+  }
+}
+
+#content {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-animation: content 3s;
+          animation: content 3s;
+}
+
+@-webkit-keyframes content {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes content {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 

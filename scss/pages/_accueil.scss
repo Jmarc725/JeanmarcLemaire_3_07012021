@@ -9,15 +9,15 @@
     border-radius: 50%;
     border-top-color: $tertiary;    
     border-bottom-color: $secondary;
-    border-left-color: $primary;
-    border-right-color: $primary;
+    border-left-color: lighten($primary, 30);
+    border-right-color: lighten($primary, 30);
     position: absolute;
     top: 40%;
     left: 30%;
     width: 150px;
     height: 150px;
     z-index: 1;
-    animation: spinner 3000ms 1s linear both;
+    animation: spinner 3000ms 200ms linear both;
     }
 
     .spinner-loading::before {
@@ -36,11 +36,14 @@
         transform: rotate(0deg);
         opacity: 0;
     }
-    5% {
-        opacity: .8;
+    10% {
+        opacity: .5;
     }
-    75% {
+    50% {
         opacity: 1;
+    }
+    80% {
+        opacity: .8;
     }
     100% {
         transform: rotate(359deg);
@@ -56,7 +59,7 @@
     overflow:hidden;
     z-index: 10;
     transform: translateX(-1000px);
-    animation: content 0s 3s both;
+    animation: content 0ms 3400ms both;
 }
 
 @keyframes content {

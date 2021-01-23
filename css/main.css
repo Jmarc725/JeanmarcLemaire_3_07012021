@@ -388,16 +388,16 @@ footer i {
   border-radius: 50%;
   border-top-color: #99E2D0;
   border-bottom-color: #FF79DA;
-  border-left-color: #9356DC;
-  border-right-color: #9356DC;
+  border-left-color: #e4d5f6;
+  border-right-color: #e4d5f6;
   position: absolute;
   top: 40%;
   left: 30%;
   width: 150px;
   height: 150px;
   z-index: 1;
-  -webkit-animation: spinner 3000ms 1s linear both;
-          animation: spinner 3000ms 1s linear both;
+  -webkit-animation: spinner 3000ms 200ms linear both;
+          animation: spinner 3000ms 200ms linear both;
 }
 
 .spinner-loading::before {
@@ -417,11 +417,14 @@ footer i {
             transform: rotate(0deg);
     opacity: 0;
   }
-  5% {
-    opacity: .8;
+  10% {
+    opacity: .5;
   }
-  75% {
+  50% {
     opacity: 1;
+  }
+  80% {
+    opacity: .8;
   }
   100% {
     -webkit-transform: rotate(359deg);
@@ -436,11 +439,14 @@ footer i {
             transform: rotate(0deg);
     opacity: 0;
   }
-  5% {
-    opacity: .8;
+  10% {
+    opacity: .5;
   }
-  75% {
+  50% {
     opacity: 1;
+  }
+  80% {
+    opacity: .8;
   }
   100% {
     -webkit-transform: rotate(359deg);
@@ -457,8 +463,8 @@ footer i {
   z-index: 10;
   -webkit-transform: translateX(-1000px);
           transform: translateX(-1000px);
-  -webkit-animation: content 0s 3s both;
-          animation: content 0s 3s both;
+  -webkit-animation: content 0ms 3400ms both;
+          animation: content 0ms 3400ms both;
 }
 
 @-webkit-keyframes content {

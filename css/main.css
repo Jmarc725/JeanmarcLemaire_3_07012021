@@ -302,24 +302,59 @@ footer i {
   border-radius: 20px;
   -webkit-box-shadow: 0 0.2rem 0.4rem #dfdcdc;
           box-shadow: 0 0.2rem 0.4rem #dfdcdc;
-  -webkit-transition: .4s;
-  transition: .4s;
   width: 100%;
   overflow: hidden;
+  opacity: 0;
+  -webkit-animation: loadingMenuItems forward;
+          animation: loadingMenuItems forward;
 }
 
+.menu__items:nth-of-type(1) {
+  -webkit-animation: loadingMenuItems 2s 1s both;
+          animation: loadingMenuItems 2s 1s both;
+}
+
+.menu__items:nth-of-type(2) {
+  -webkit-animation: loadingMenuItems 2s 2s both;
+          animation: loadingMenuItems 2s 2s both;
+}
+
+.menu__items:nth-of-type(3) {
+  -webkit-animation: loadingMenuItems 2s 3s both;
+          animation: loadingMenuItems 2s 3s both;
+}
+
+@-webkit-keyframes loadingMenuItems {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loadingMenuItems {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation confirmation menu */
 .menu__items:active .anim-confirmation {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .menu__items:active .plat__prix {
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .anim-confirmation {
@@ -348,24 +383,6 @@ footer i {
 
 .fa-check-circle--translate {
   top: 33px;
-}
-
-@-webkit-keyframes loadingMenuItems {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes loadingMenuItems {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .spinner-loading {

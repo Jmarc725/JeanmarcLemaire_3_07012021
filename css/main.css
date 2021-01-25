@@ -77,6 +77,10 @@ a {
   margin-top: 10px;
 }
 
+.plat__heading--margin {
+  padding-top: 8px;
+}
+
 .plat__heading--bigger {
   line-height: 1.3em;
   margin-bottom: -5px;
@@ -87,8 +91,18 @@ a {
   font-weight: 100;
 }
 
+.plat__garniture--interlignage {
+  margin-top: -8px;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+}
+
 .plat__prix {
   margin-right: -47px;
+}
+
+.plat__garniture--condensed {
+  font-size: 0.85em;
 }
 
 .logo {
@@ -322,6 +336,11 @@ footer i {
 .menu__items:nth-of-type(3) {
   -webkit-animation: loadingMenuItems 2s 1s both;
           animation: loadingMenuItems 2s 1s both;
+}
+
+.menu__items:nth-of-type(4) {
+  -webkit-animation: loadingMenuItems 2s 1.5s both;
+          animation: loadingMenuItems 2s 1.5s both;
 }
 
 @-webkit-keyframes loadingMenuItems {

@@ -9,6 +9,9 @@
         font-size: 1.1em;
         font-weight: 500;
         margin-top: 10px;
+        &--margin {
+            padding-top: 8px;
+        }
         
         &--bigger {
             line-height: 1.3em;
@@ -19,11 +22,20 @@
         &__garniture {
             font-size: 0.9em;
             font-weight: 100;
+        &--interlignage {
+            margin-top: -8px;
+            line-height: 1.4em;
+            margin-bottom: 10px;
         }
+    }
 
         &__prix {
             margin-right: -47px;
         }
+}
+
+.plat__garniture--condensed {
+    font-size: 0.85em;
 }
 
 

@@ -118,6 +118,10 @@
     animation: loadingMenuItems 2s 1s both; 
 }
 
+.menu__items:nth-of-type(4) {
+    animation: loadingMenuItems 2s 1.5s both; 
+}
+
 @keyframes loadingMenuItems {
    
     0% {

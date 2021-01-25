@@ -209,58 +209,16 @@ footer i {
   font-weight: 300;
   margin-right: 20px;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
-.fa-heart:active, .fa-heart:hover {
+.fa-heart:active {
   color: #9356DC;
-  -webkit-animation: scaleHeart .6s ease-in;
-          animation: scaleHeart .6s ease-in;
-}
-
-@-webkit-keyframes scaleHeart {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  25% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  75% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes scaleHeart {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  25% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  75% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 .header-headings {

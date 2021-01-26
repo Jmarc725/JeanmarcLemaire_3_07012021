@@ -119,21 +119,17 @@
     }
 }
 
-
-
-
-
 /* section fonctionnement */
+
+.fonctionnement {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 .titre-section {
     font-size: 1.4em;
     font-weight: 600;
     margin-left: 20px;
-}
-
-.fonctionnement-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .boutton-inactif-wrapper {
@@ -147,15 +143,15 @@
     border-radius: 20px;
     box-shadow: 0 .2rem .6rem rgb(223, 220, 220);
     position: relative;
-}
+    & i {
+        width: 150%;
+        opacity: 0.4;
+        margin-left: 25px;
+    }
 
-.boutton-inactif-wrapper p, .boutton-inactif-wrapper i {
-    margin-left: 25px;
-}
-
-.boutton-inactif-wrapper i {
-    width: 150%;
-    opacity: 0.4;
+    & p {
+        margin-left: 25px;
+    }
 }
 
 .numero-list {

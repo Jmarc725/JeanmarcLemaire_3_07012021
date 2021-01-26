@@ -559,15 +559,15 @@ footer i {
 }
 
 /* section fonctionnement */
+.fonctionnement {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .titre-section {
   font-size: 1.4em;
   font-weight: 600;
   margin-left: 20px;
-}
-
-.fonctionnement-container {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .boutton-inactif-wrapper {
@@ -590,13 +590,14 @@ footer i {
   position: relative;
 }
 
-.boutton-inactif-wrapper p, .boutton-inactif-wrapper i {
-  margin-left: 25px;
-}
-
 .boutton-inactif-wrapper i {
   width: 150%;
   opacity: 0.4;
+  margin-left: 25px;
+}
+
+.boutton-inactif-wrapper p {
+  margin-left: 25px;
 }
 
 .numero-list {

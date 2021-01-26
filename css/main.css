@@ -301,6 +301,21 @@ footer i {
           animation: loadingMenuItems 2s 1.5s both;
 }
 
+.menu__items:nth-of-type(5) {
+  -webkit-animation: loadingMenuItems 2s 2s both;
+          animation: loadingMenuItems 2s 2s both;
+}
+
+.menu__items:nth-of-type(6) {
+  -webkit-animation: loadingMenuItems 2s 2.5s both;
+          animation: loadingMenuItems 2s 2.5s both;
+}
+
+.menu__items:nth-of-type(7) {
+  -webkit-animation: loadingMenuItems 2s 3s both;
+          animation: loadingMenuItems 2s 3s both;
+}
+
 @-webkit-keyframes loadingMenuItems {
   0% {
     opacity: 0;
@@ -320,14 +335,16 @@ footer i {
 }
 
 /* Animation confirmation menu */
-.menu__items:active .anim-confirmation {
+.menu__items:active .anim-confirmation,
+.menu__items:hover .anim-confirmation {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.menu__items:active .plat__prix {
+.menu__items:active .plat__prix,
+.menu__items:hover .plat__prix {
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
   -webkit-transition: 1s;

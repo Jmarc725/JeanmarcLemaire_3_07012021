@@ -122,6 +122,18 @@
     animation: loadingMenuItems 2s 1.5s both; 
 }
 
+.menu__items:nth-of-type(5) {
+    animation: loadingMenuItems 2s 2s both; 
+}
+
+.menu__items:nth-of-type(6) {
+    animation: loadingMenuItems 2s 2.5s both; 
+}
+
+.menu__items:nth-of-type(7) {
+    animation: loadingMenuItems 2s 3s both; 
+}
+
 @keyframes loadingMenuItems {
    
     0% {
@@ -134,12 +146,14 @@
 
 /* Animation confirmation menu */
 
-.menu__items:active .anim-confirmation {
+.menu__items:active .anim-confirmation,
+.menu__items:hover .anim-confirmation {
     transform: translateX(0px);
     transition: 1s;
 }
 
-.menu__items:active .plat__prix {
+.menu__items:active .plat__prix,
+.menu__items:hover .plat__prix {
     transform: translateX(-60px);
     transition: 1s;
 }

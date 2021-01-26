@@ -184,7 +184,7 @@ footer i {
   margin-right: 20px;
 }
 
-.fa-heart {
+.heart-menu {
   font-size: 1.5em;
   font-weight: 300;
   margin-right: 20px;
@@ -195,7 +195,7 @@ footer i {
   transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
-.fa-heart:active {
+.heart-menu:active {
   color: #9356DC;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
@@ -648,14 +648,9 @@ main {
   font-weight: 100;
 }
 
-.coeur-icon {
+.fa-heart {
   margin-right: 15px;
-  font-size: 1.4em;
-}
-
-.coeur-icon:hover {
-  cursor: pointer;
-  color: #9356DC;
+  font-size: 1.3em;
 }
 
 .nouveau {

@@ -1,8 +1,4 @@
-// .loader {
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-// }
+/* Animation loader Home */
 
 .spinner-loading {
     border: 20px solid #dddddd;
@@ -72,38 +68,37 @@
 }
 
 
-
-
-/* logo */
+/* header home*/
 
 .logo-home {
-    box-shadow: 0 .15rem .50rem rgb(209, 208, 208);
+    box-shadow: 0 .3rem .30rem rgb(209, 208, 208);
     margin: auto;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 6px;
 }
 
 .logo-home img {
     width: 50%;
 }
 
-/* location */
-
 .location {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: transparent;
+    background-color: rgba(236,236,236, .8);
 }
 
 .location i {
     margin-right: 20px;
+    font-size: 0.8em;
 }
 
-/* header */
+.explorer-restaurant-container {
+    background-color: rgba(245, 245, 245, .5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 .header {    
     text-align: center;
@@ -126,26 +121,6 @@
     font-size: 1.5em;
     line-height: 1.2em;
 }
-
-.explorer-restaurant-container {
-    background-color: rgba(5, 5, 5, 0.05);
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
-
-/* button */
-
-.btn-bigger-btn{
-    width: 55%
-}
-
-.btn p {
-    text-align: center;
-    color: white;
-    font-size: 1em;
-}
-
 
 /* section fonctionnement */
 
@@ -192,16 +167,13 @@
     left: -35px;
 }
 
-
-/* main */
+/* Main diaporama restaurant */
 
 main {
     background-color: rgba(5, 5, 5, 0.05);
     padding-top: 30px;
     padding-bottom: 40px;
 }
-
-/* diaporama restaurant */
 
 .diaporama-restaurant {
     width: 90%;
@@ -252,48 +224,4 @@ main {
     position:absolute;
     top: 0;
     right: 12px;
-}
-
-
-/* footer */
-
-footer {
-    background-color:rgba(5, 5, 5, 0.8);
-    padding-left: 25px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
-
-.flex-footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
-
-footer a, footer i, .ohmyfood {
-    color: white;
-}
-
-footer p {
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-
-footer i {
-    margin-right: 15px;
-    font-size: 0.8em;
-}
-
-.fa-hands-helping {
-    font-size: 0.7em;
-    margin-right: 12px;
-}
-
-.ohmyfood {
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.2em;
-}
-
-.contact {
-    margin-top: 12px;
 }

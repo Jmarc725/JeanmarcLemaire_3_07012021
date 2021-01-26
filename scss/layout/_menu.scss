@@ -1,21 +1,11 @@
+/* Main menus */
+
 .restaurant {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-.heart-menu {    
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-right: 20px;
-    cursor: pointer;
-    transition: transform 1.5s;
-    &:active {
-        color: $primary;
-        transform:scaleY(1);
-    }
 }
 
 .main {

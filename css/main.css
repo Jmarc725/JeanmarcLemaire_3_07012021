@@ -530,13 +530,13 @@ footer i {
   font-size: 0.8em;
 }
 
-.explorer-restaurant-container {
+.header {
   background-color: rgba(245, 245, 245, 0.5);
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.header {
+.header__wrapper {
   text-align: center;
   margin: auto;
   margin-top: 25px;
@@ -550,7 +550,7 @@ footer i {
   line-height: 1.2em;
 }
 
-.header p {
+.header__headings-home--byline {
   width: 85%;
   margin: auto;
   color: rgba(0, 0, 0, 0.5);

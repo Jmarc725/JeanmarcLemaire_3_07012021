@@ -122,21 +122,21 @@
 /* section fonctionnement */
 
 .fonctionnement {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 90%;
+    margin: 40px auto;
 }
 
 .titre-section {
     font-size: 1.4em;
     font-weight: 600;
-    margin-left: 20px;
+    // margin-left: 20px;
 }
 
-.boutton-inactif-wrapper {
+.bouton-inactif {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 85%;
+    // width: 85%;
     margin: 30px auto;
     background-color: rgba(5, 5, 5, 0.05);
     padding: 10px;
@@ -152,9 +152,8 @@
     & p {
         margin-left: 25px;
     }
-}
 
-.numero-list {
+    &__list {
     background-color: #9356DC;
     color: white;
     font-size: 0.8em;
@@ -162,6 +161,7 @@
     border-radius: 50px;
     position: absolute;
     left: -35px;
+    }
 }
 
 /* Main diaporama restaurant */
@@ -172,13 +172,28 @@ main {
     padding-bottom: 40px;
 }
 
-.diaporama-restaurant {
+.wrapper {
     width: 90%;
+    margin: 0 auto;
+}
+
+.diaporama-restaurant {
+    // width: 90%;
     margin: auto;
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 0 .2rem .4rem rgb(223, 220, 220);
     position: relative;
+    @include tablet-only {
+        margin: 0 15px;
+    }
+    &__container {
+        @include tablet-only {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 30px;
+        }
+    }   
     
     &__legend {
         display: flex;
@@ -198,9 +213,11 @@ main {
         width: 100%;
         height: 160px;
         object-fit: cover;
-        border-radius: 20px 20px 0 0;
+        border-radius: 20px 20px 0 0;           
     }
 }
+
+/* Pastille verte nouveau */
 
 .nouveau {
     color: green;

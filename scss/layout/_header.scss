@@ -5,20 +5,30 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
+    @include tablet-only {
+        margin-left: 30px;
+    }
 }
 
 .logo img {
-    width: 40%;
+    width: 40%;    
 }
 
 .logo i {
     margin-left: 20px;
     margin-right: 75px;
     color: black;
+    @include tablet-only {
+        margin-right: 150px;
+    }
+
 }
 
 .img-header {
     width: 100%;
     margin-top: 20px;
     z-index: 1;
+    @include tablet-only {
+        margin-top: 30px;
+    }
 }

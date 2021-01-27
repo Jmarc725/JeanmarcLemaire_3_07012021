@@ -8,7 +8,10 @@
         font-size: 1.1em;
         font-weight: 500;
         margin-top: 10px;
-        
+        @include tablet-only {
+            font-size: 1.5em;
+        }
+
         &--margin {
             padding-top: 8px;
         }
@@ -21,19 +24,26 @@
     &__garniture {
         font-size: 0.9em;
         font-weight: 100;
+        @include tablet-only {
+            font-size: 1.3em;
+        }
             
         &--interlignage {
             margin-top: -8px;
             line-height: 1.4em;
             margin-bottom: 10px;
-        }    
+        }  
+
         &--condensed {
             font-size: 0.85em;
-        }
     }
+}
 
     &__prix {
         margin-right: -47px;
+        @include tablet-only {
+            font-size: 1.3em;
+        }
     }
 }
 

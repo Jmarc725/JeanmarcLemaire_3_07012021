@@ -36,6 +36,9 @@
 
         &--condensed {
             font-size: 0.85em;
+            @include tablet-only {
+                font-size: 1.3em;
+            }
     }
 }
 

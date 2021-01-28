@@ -3,7 +3,7 @@
 .btn {
     @include linear-gradient;
     @include box-shadow;
-    width: 45%;
+    width: 42%;
     // padding: 5px;
     margin: 20px auto;
     border: 0.1px solid white;
@@ -11,9 +11,12 @@
     margin-bottom: 15px;
     text-align: center;
     @include tablet-only {
-        width: 35%;
+        width: 30%;
+        @include desktop-only {
+            width: 25%;
+        }
     }
-        
+   
     &--bigger {
         width: 55%;
     }

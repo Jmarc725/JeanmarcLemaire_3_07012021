@@ -298,7 +298,7 @@ a {
 .footer p::after {
   position: absolute;
   height: 20px;
-  width: 2px;
+  width: 1px;
   background-color: white;
   content: "";
   right: -25px;

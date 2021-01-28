@@ -288,7 +288,7 @@ footer i {
 
 @media screen and (min-width: 768px) {
   .header-headings {
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
 }
 
@@ -365,8 +365,7 @@ footer i {
 
 @media screen and (min-width: 768px) {
   .menu__items {
-    padding-top: 18px;
-    padding-left: 15px;
+    padding-left: 20px;
     margin-bottom: 25px;
   }
 }
@@ -458,8 +457,8 @@ footer i {
 }
 
 .anim-confirmation {
-  -webkit-transform: translateX(65px);
-          transform: translateX(65px);
+  -webkit-transform: translateX(90px);
+          transform: translateX(90px);
 }
 
 .dish-confirmation {
@@ -469,8 +468,21 @@ footer i {
   border-radius: 0 20px 20px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .dish-confirmation {
+    width: 85px;
+    height: 87px;
+  }
+}
+
 .dish-confirmation--bigger {
   height: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .dish-confirmation--bigger {
+    height: 115px;
+  }
 }
 
 .fa-check-circle {
@@ -479,6 +491,13 @@ footer i {
   top: 22px;
   right: 20px;
   font-size: 1.6em;
+}
+
+@media screen and (min-width: 768px) {
+  .fa-check-circle {
+    top: 30px;
+    right: 30px;
+  }
 }
 
 .fa-check-circle--translate {

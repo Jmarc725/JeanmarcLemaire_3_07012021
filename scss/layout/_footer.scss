@@ -5,6 +5,14 @@
     padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 20px;
+
+    &__headings {
+        font-family: 'shrikhand', cursive;
+        font-size: 1.3em;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
     
     &__list--icon {
         display: flex;
@@ -12,16 +20,15 @@
     }
     
     & p {
-    margin-top: 2px;
+    margin-top: 0;
     // margin-bottom: 5px;
     color: white;
     }
 }
 
 .contact {
-    margin-top: 7px;
+    margin-top: 3px;
 }
-
 
 .fa-utensils {
     margin-right: 15px;

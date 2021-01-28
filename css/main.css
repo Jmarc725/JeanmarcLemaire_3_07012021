@@ -202,51 +202,40 @@ a {
 }
 
 /* Footer */
-footer {
+.footer {
   background-color: rgba(5, 5, 5, 0.8);
-  padding-left: 25px;
+  padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 20px;
 }
 
-.flex-footer {
+.footer__list--icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
 }
 
-footer a, footer i, .ohmyfood {
+.footer p {
+  margin-top: 2px;
   color: white;
 }
 
-footer p {
+.contact {
   margin-top: 7px;
-  margin-bottom: 7px;
 }
 
-footer i {
+.fa-utensils {
   margin-right: 15px;
-  font-size: 0.8em;
+  color: white;
 }
 
 .fa-hands-helping {
-  font-size: 0.7em;
-  margin-right: 12px;
-}
-
-.ohmyfood {
-  font-family: 'Shrikhand', cursive;
-  font-size: 1.2em;
-}
-
-.contact {
-  margin-top: 12px;
+  margin-right: 10px;
+  font-size: 0.9em;
+  color: white;
 }
 
 /* Main menus */
@@ -313,7 +302,8 @@ footer i {
 @media screen and (min-width: 768px) {
   .menu__heading {
     font-size: 2em;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    margin-top: 60px;
   }
 }
 

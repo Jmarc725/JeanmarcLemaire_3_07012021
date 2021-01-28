@@ -1,42 +1,41 @@
 /* Footer */
 
-footer {
+.footer {
     background-color:rgba(5, 5, 5, 0.8);
-    padding-left: 25px;
+    padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 20px;
-}
-
-.flex-footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
-
-footer a, footer i, .ohmyfood {
+    
+    &__list--icon {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    & p {
+    margin-top: 2px;
+    // margin-bottom: 5px;
     color: white;
-}
-
-footer p {
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-
-footer i {
-    margin-right: 15px;
-    font-size: 0.8em;
-}
-
-.fa-hands-helping {
-    font-size: 0.7em;
-    margin-right: 12px;
-}
-
-.ohmyfood {
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.2em;
+    }
 }
 
 .contact {
-    margin-top: 12px;
+    margin-top: 7px;
 }
+
+
+.fa-utensils {
+    margin-right: 15px;
+    color: white;
+}
+
+.fa-hands-helping {
+    margin-right: 10px;
+    font-size: 0.9em;
+    color: white;
+}
+        
+
+
+
+   
+

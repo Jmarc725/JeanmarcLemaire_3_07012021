@@ -77,8 +77,8 @@
     padding-top: 20px;
     padding-bottom: 6px;
     @include tablet-only {
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     @include desktop-only {
         padding-top: 35px;
@@ -163,14 +163,23 @@
 .fonctionnement {
     width: 90%;
     margin: 40px auto;
+    @include tablet-only {
+        margin-bottom: 80px;
+    }
 }
 
-.titre-section {
+.fonctionnement .titre-section {
     font-size: 1.4em;
     font-weight: 600;
     @include tablet-only {
-        font-size: 1.6em;
+        font-size: 1.7em;
         margin-left: 80px;
+        @include desktop-only {
+            font-size: 1.9em;
+            margin-left: 100px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
     }
 }
 
@@ -187,7 +196,7 @@
     position: relative;
     @include tablet-only {
         width: 75%;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     & i {
         width: 150%;
@@ -195,6 +204,13 @@
         margin-left: 25px;
         @include tablet-only {
             font-size: 1.3em;
+            margin-left: 60px;
+            margin-right: 30px;
+            @include desktop-only {
+                font-size: 1.5em;
+                margin-left: 90px;
+                margin-right: 50px;
+            }
         }
     }
 
@@ -202,6 +218,9 @@
         margin-left: 25px;
         @include tablet-only {
             font-size: 1.3em;
+            @include desktop-only {
+                font-size: 1.5em;
+            }
         }
     }
 
@@ -222,11 +241,19 @@ main {
     background-color: rgba(5, 5, 5, 0.05);
     padding-top: 30px;
     padding-bottom: 40px;
+    @include tablet-only {
+        padding-top: 40px;
+        padding-bottom: 80px;;
+    }
 }
 
 .wrapper .titre-section {
     @include tablet-only {
     padding-left: 15px;
+    font-size: 1.7em;
+        @include desktop-only {
+        font-size: 1.9em;
+        }
     }
 }
 
@@ -262,9 +289,18 @@ main {
         background-color: white;
         border-radius: 0 0 15px 15px;
     }
+
+    &__headings {
+        @include tablet-only {
+            font-size: 2em;
+        }
+    }
     
     &__byline {
         font-weight: 100;
+        @include tablet-only {
+            font-size: 1.6em;
+        }
     }
     
     & img {

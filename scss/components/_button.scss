@@ -19,6 +19,12 @@
    
     &--bigger {
         width: 55%;
+        @include tablet-only {
+            width: 40%;
+            @include desktop-only {
+                width: 30%;
+            }
+        }
     }
         
     &:hover {
@@ -33,7 +39,14 @@
     font-size: 1em;
     @include tablet-only {
         font-size: 1.5em;
-    }
+        }
     }  
 }
+
+.btn--bigger p {
+    @include tablet-only {
+    font-size: 1.3em;
+    }
+}
+
 

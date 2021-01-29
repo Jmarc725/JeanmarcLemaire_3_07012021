@@ -76,8 +76,22 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 6px;
+    @include tablet-only {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    @include desktop-only {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
     & img {
         width: 50%;
+        @include tablet-only {
+            width: 40%;
+        }
+        @include desktop-only {
+            width: 30%;
+        }
     }
 }
 
@@ -86,6 +100,18 @@
     justify-content: center;
     align-items: baseline;
     background-color: rgba(236,236,236, .8);
+    @include tablet-only {
+        font-size: 1.2em;
+    }
+
+    @include tablet-only {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        @include desktop-only {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
     & i {
         margin-right: 20px;
         font-size: 0.8em;
@@ -96,6 +122,9 @@
     background-color: rgba(245, 245, 245, .5);
     padding-top: 15px;
     padding-bottom: 15px;
+    @include tablet-only {
+        padding-bottom: 40px;
+    }
     
     &__wrapper {    
         text-align: center;
@@ -109,12 +138,22 @@
         margin-bottom: 20px;
         font-size: 1.5em;
         line-height: 1.2em;
+        @include tablet-only {
+            width: 85%;
+            font-size: 2em;
+            line-height: 0.8em;
+        }
         &--byline {
             width: 85%;
             margin: auto;
             color: rgba(0, 0, 0, 0.5);
             font-size: 1.1em;
             line-height: 1.3em;
+            @include tablet-only {
+                width: 90%;
+                font-size: 1.4em;
+                padding-bottom: 25px;
+            }
         }
     }
 }
@@ -129,7 +168,10 @@
 .titre-section {
     font-size: 1.4em;
     font-weight: 600;
-    // margin-left: 20px;
+    @include tablet-only {
+        font-size: 1.6em;
+        margin-left: 80px;
+    }
 }
 
 .bouton-inactif {
@@ -143,14 +185,24 @@
     border-radius: 20px;
     box-shadow: 0 .2rem .6rem rgb(223, 220, 220);
     position: relative;
+    @include tablet-only {
+        width: 75%;
+        margin-bottom: 40px;
+    }
     & i {
         width: 150%;
         opacity: 0.4;
         margin-left: 25px;
+        @include tablet-only {
+            font-size: 1.3em;
+        }
     }
 
     & p {
         margin-left: 25px;
+        @include tablet-only {
+            font-size: 1.3em;
+        }
     }
 
     &__list {
@@ -170,6 +222,12 @@ main {
     background-color: rgba(5, 5, 5, 0.05);
     padding-top: 30px;
     padding-bottom: 40px;
+}
+
+.wrapper .titre-section {
+    @include tablet-only {
+    padding-left: 15px;
+    }
 }
 
 .wrapper {
@@ -213,7 +271,10 @@ main {
         width: 100%;
         height: 160px;
         object-fit: cover;
-        border-radius: 20px 20px 0 0;           
+        border-radius: 20px 20px 0 0;     
+        @include desktop-only {
+            height: 200px;
+        }      
     }
 }
 

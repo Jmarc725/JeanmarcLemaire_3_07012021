@@ -45,11 +45,13 @@
 }
 
 .footer__wrapper {
+    @include desktop-only {
     display: flex;
     justify-content: center;
     & p {
         margin-right: 50px;
         padding-bottom: 20px;
+        }
     }
 }
 
@@ -57,12 +59,14 @@
     position: relative;
 }
 .footer p::after {
+    @include desktop-only {
     position: absolute;
     height: 20px;
     width: 1px;
     background-color: white;
     content: "";
     right: -25px;
+    }
 }
 
 

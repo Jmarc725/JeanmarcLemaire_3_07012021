@@ -180,6 +180,18 @@
     }
 }
 
+.bouton-inactif:hover {
+    background-color: rgba($color: $primary, $alpha: 0.5);
+}
+
+.bouton-inactif:hover .fa-mobile-alt::before {
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: tomato;
+    height: 30px;
+    width: 30px;
+}
+
 .bouton-inactif {
     display: flex;
     justify-content: flex-start;
@@ -191,10 +203,8 @@
     border-radius: 20px;
     box-shadow: 0 .2rem .6rem rgb(223, 220, 220);
     position: relative;
-    &:hover {
-        background-color: $primary;
-        opacity: 0.4;
-    }
+    transition: .4s;
+
     @include tablet-only {
         // width: 75%;
         margin-bottom: 30px;

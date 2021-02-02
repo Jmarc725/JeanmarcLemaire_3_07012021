@@ -870,6 +870,18 @@ a {
   }
 }
 
+.bouton-inactif:hover {
+  background-color: rgba(147, 86, 220, 0.5);
+}
+
+.bouton-inactif:hover .fa-mobile-alt::before {
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: tomato;
+  height: 30px;
+  width: 30px;
+}
+
 .bouton-inactif {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -887,11 +899,8 @@ a {
   -webkit-box-shadow: 0 0.2rem 0.6rem #dfdcdc;
           box-shadow: 0 0.2rem 0.6rem #dfdcdc;
   position: relative;
-}
-
-.bouton-inactif:hover {
-  background-color: #9356DC;
-  opacity: 0.4;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 @media screen and (min-width: 768px) {

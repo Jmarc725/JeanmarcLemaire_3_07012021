@@ -241,6 +241,9 @@ a {
 @media screen and (min-width: 768px) {
   .img-header {
     margin-top: 30px;
+    max-height: 550px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -875,11 +878,15 @@ a {
 }
 
 .bouton-inactif:hover .fa-mobile-alt::before {
-  border: 1px solid white;
-  border-radius: 50%;
-  background-color: tomato;
-  height: 30px;
-  width: 30px;
+  color: #6023a9;
+}
+
+.bouton-inactif:hover .fa-list::before {
+  color: #6023a9;
+}
+
+.bouton-inactif:hover .fa-store::before {
+  color: #6023a9;
 }
 
 .bouton-inactif {
@@ -951,8 +958,10 @@ a {
   background-color: #9356DC;
   color: white;
   font-size: 0.7em;
-  padding: 8px 10px;
-  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  padding: 9px 14px;
+  border-radius: 50%;
   position: absolute;
   left: -35px;
 }

@@ -480,8 +480,8 @@ a {
   width: 100%;
   overflow: hidden;
   opacity: 0;
-  -webkit-animation: loadingMenuItems forward;
-          animation: loadingMenuItems forward;
+  -webkit-animation: loadingMenuItems both;
+          animation: loadingMenuItems both;
 }
 
 @media screen and (min-width: 768px) {
@@ -1083,7 +1083,7 @@ main {
 
 @media screen and (min-width: 1200px) {
   .diaporama-restaurant img {
-    height: 240px;
+    height: 260px;
   }
 }
 

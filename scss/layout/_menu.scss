@@ -83,7 +83,7 @@
     width: 100%;
     overflow: hidden;
     opacity: 0;
-    animation: loadingMenuItems forward;
+    animation: loadingMenuItems both;
     @include tablet-only {
         padding-left: 20px;
         margin-bottom: 25px;

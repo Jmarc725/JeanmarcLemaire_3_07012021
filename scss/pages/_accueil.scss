@@ -49,18 +49,13 @@
 }
 
 #content {
-    position: absolute;
-    top: 0;
-    left: 0;
     overflow:hidden;
-    z-index: 10;
-    transform: translateX(-1000px);
     animation: content 0ms 3400ms both;
 }
 
 @keyframes content {
     0% {
-        transform: translateX(-1000px);
+        transform: translateX(-2000px);
     }
     100% {
         transform:translateX(0);
@@ -165,6 +160,7 @@
     margin: 40px auto;
     @include tablet-only {
         margin-bottom: 80px;
+        width: 75%;
     }
 }
 
@@ -173,12 +169,13 @@
     font-weight: 600;
     @include tablet-only {
         font-size: 1.7em;
-        margin-left: 80px;
+        // margin-left: 80px;
         @include desktop-only {
             font-size: 1.9em;
-            margin-left: 100px;
+            // margin-left: 100px;
             margin-top: 40px;
             margin-bottom: 25px;
+            width: 65%;
         }
     }
 }
@@ -194,8 +191,12 @@
     border-radius: 20px;
     box-shadow: 0 .2rem .6rem rgb(223, 220, 220);
     position: relative;
+    &:hover {
+        background-color: $primary;
+        opacity: 0.4;
+    }
     @include tablet-only {
-        width: 75%;
+        // width: 75%;
         margin-bottom: 30px;
     }
     & i {
@@ -227,7 +228,7 @@
     &__list {
     background-color: #9356DC;
     color: white;
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding: 8px 10px;
     border-radius: 50px;
     position: absolute;
@@ -277,6 +278,13 @@ main {
             display: grid;
             grid-template-columns: auto auto;
             grid-gap: 30px;
+    
+        
+            // @media screen and (min-width: 1200px) {
+            //     display: flex;
+            //     width: 100%;
+            //     margin: auto;
+            // }
         }
     }   
     
@@ -288,6 +296,9 @@ main {
         padding-left: 15px;
         background-color: white;
         border-radius: 0 0 15px 15px;
+        @include desktop-only {
+            height: 75px;
+        }
     }
 
     &__headings {
@@ -307,12 +318,19 @@ main {
         width: 100%;
         height: 160px;
         object-fit: cover;
-        border-radius: 20px 20px 0 0;     
+        border-radius: 20px 20px 0 0;   
+        @include tablet-only {
+            height: 175px;  
+        }
         @include desktop-only {
-            height: 200px;
-        }      
+            height: 210px;
+        } 
+        @media screen and (min-width: 1200px){
+            height: 240px;
+        }     
     }
 }
+
 
 /* Pastille verte nouveau */
 

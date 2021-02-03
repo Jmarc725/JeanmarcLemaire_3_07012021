@@ -174,16 +174,12 @@ main {
     }
 
     &__headings {
-        @include tablet-only {
-            font-size: 2em;
-        }
+        font-size: 1.2em;
     }
     
     &__byline {
+        font-size: 1em;
         font-weight: 100;
-        @include tablet-only {
-            font-size: 1.6em;
-        }
     }
     
     & img {
@@ -211,10 +207,11 @@ main {
     position:absolute;
     top: 0;
     right: 12px;
-    @include tablet-only {
-        font-size: 1em;
-    }
+    // @include tablet-only {
+    //     font-size: 1em;
+    // }
     @include desktop-only {
         font-size: 1.2em;
+        right: 20px;
     }
 }

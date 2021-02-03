@@ -1,68 +1,3 @@
-/* Animation loader Home */
-
-.spinner-loading {
-    border: 20px solid #dddddd;
-    border-radius: 50%;
-    border-top-color: $tertiary;    
-    border-bottom-color: $secondary;
-    border-left-color: lighten($primary, 30);
-    border-right-color: lighten($primary, 30);
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    width: 150px;
-    height: 150px;
-    z-index: 1;
-    animation: spinner 3000ms 200ms linear both;
-    }
-
-    .spinner-loading::before {
-        content:"";
-        border: 20px solid transparent;
-        position: absolute;
-        top: 40%;
-        left: 30%;
-        width: 150px;
-        height: 150px;
-        z-index: 10;
-    }
-
-@keyframes spinner {
-    0% {
-        transform: rotate(0deg);
-        opacity: 0;
-    }
-    10% {
-        opacity: .5;
-    }
-    50% {
-        opacity: 1;
-    }
-    80% {
-        opacity: .8;
-    }
-    100% {
-        transform: rotate(359deg);
-        opacity: 0;
-    
-    }
-}
-
-#content {
-    overflow:hidden;
-    animation: content 0ms 3400ms both;
-}
-
-@keyframes content {
-    0% {
-        transform: translateX(-2000px);
-    }
-    100% {
-        transform:translateX(0);
-    }
-}
-
-
 /* header home*/
 
 .logo-home {
@@ -180,80 +115,6 @@
     }
 }
 
-.bouton-inactif:hover {
-    background-color: rgba($color: $primary, $alpha: 0.5);
-}
-
-.bouton-inactif:hover .fa-mobile-alt::before {
-    color: darken($primary, 20%);
-    // height: 30px;
-    // width: 30px;
-}
-
-.bouton-inactif:hover .fa-list::before {
-    color: darken($primary, 20%);
-}
-
-.bouton-inactif:hover .fa-store::before {
-    color: darken($primary, 20%);
-}
-
-.bouton-inactif {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    // width: 85%;
-    margin: 30px auto;
-    background-color: rgba(5, 5, 5, 0.05);
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0 .2rem .6rem rgb(223, 220, 220);
-    position: relative;
-    transition: .4s;
-
-    @include tablet-only {
-        // width: 75%;
-        margin-bottom: 30px;
-    }
-    & i {
-        width: 150%;
-        opacity: 0.4;
-        margin-left: 25px;
-        @include tablet-only {
-            font-size: 1.3em;
-            margin-left: 60px;
-            margin-right: 30px;
-            @include desktop-only {
-                font-size: 1.5em;
-                margin-left: 90px;
-                margin-right: 50px;
-            }
-        }
-    }
-
-    & p {
-        margin-left: 25px;
-        @include tablet-only {
-            font-size: 1.3em;
-            @include desktop-only {
-                font-size: 1.5em;
-            }
-        }
-    }
-
-    &__list {
-    background-color: #9356DC;
-    color: white;
-    font-size: 0.7em;
-    width: 45px;
-    height: 45px;
-    padding: 9px 14px;
-    border-radius: 50%;
-    position: absolute;
-    left: -35px;
-    }
-}
-
 /* Main diaporama restaurant */
 
 main {
@@ -295,14 +156,7 @@ main {
         @include tablet-only {
             display: grid;
             grid-template-columns: auto auto;
-            grid-gap: 30px;
-    
-        
-            // @media screen and (min-width: 1200px) {
-            //     display: flex;
-            //     width: 100%;
-            //     margin: auto;
-            // }
+            grid-gap: 30px;            
         }
     }   
     
@@ -337,9 +191,6 @@ main {
         height: 160px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;   
-        @include tablet-only {
-            height: 175px;  
-        }
         @include desktop-only {
             height: 210px;
         } 
@@ -348,7 +199,6 @@ main {
         }     
     }
 }
-
 
 /* Pastille verte nouveau */
 
@@ -361,4 +211,10 @@ main {
     position:absolute;
     top: 0;
     right: 12px;
+    @include tablet-only {
+        font-size: 1em;
+    }
+    @include desktop-only {
+        font-size: 1.2em;
+    }
 }

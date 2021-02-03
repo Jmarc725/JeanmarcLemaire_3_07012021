@@ -1,17 +1,25 @@
 /* Header pages des menus */
 
 .logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
+    // // display: flex;
+    // // justify-content: flex-start;
+    // // align-items: center;
+    // // margin-top: 20px;
+    // // @include tablet-only {
+    // //     margin-left: 30px;
+    // //     margin-top: 40px;
+    // //     margin-bottom: 20px;
+    // //     @include desktop-only {
+    // //     margin-left: -30px;            
+    // //     justify-content: center;
+    //     }
+    // }
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
     @include tablet-only {
-        margin-left: 30px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        @include desktop-only {
-            margin-left: 120px;
-        }
+        padding-top: 35px;
     }
 }
 
@@ -20,23 +28,41 @@
 }
 
 .logo i {
-    margin-left: 20px;
-    margin-right: 75px;
-    color: black;
+    // margin-left: 20px;
+    // margin-right: 75px;
+    // color: black;
+    // @include tablet-only {
+    //     margin-right: 150px;
+    //     font-size: 1.6em;        
+    // }
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    font-size: 0.8em;
     @include tablet-only {
-        margin-right: 150px;
-        font-size: 1.6em;        
+        font-size: 1.4em;
+        top: 50px;
+        left: 40px;
+    }
+    @include desktop-only {
+        font-size: 1.6em;
+        top: 55px;
+        left: 50px;
     }
 
 }
-
+ 
 .img-header {
     width: 100%;
-    margin-top: 20px;
+    // margin-top: 10px;
     z-index: 1;
     @include tablet-only {
-        margin-top: 30px;
+        margin-top: 20px;
         max-height: 550px;
+        object-fit: cover;
+    }
+    @include desktop-only {
+        max-height: 700px;
         object-fit: cover;
     }
 }

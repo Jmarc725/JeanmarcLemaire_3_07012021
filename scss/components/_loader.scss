@@ -1,0 +1,63 @@
+/* Animation loader Home */
+
+.spinner-loading {
+    border: 20px solid #dddddd;
+    border-radius: 50%;
+    border-top-color: $tertiary;    
+    border-bottom-color: $secondary;
+    border-left-color: lighten($primary, 30);
+    border-right-color: lighten($primary, 30);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    animation: spinner 3000ms 200ms linear both;
+    }
+
+    .spinner-loading::before {
+        content:"";
+        border: 20px solid transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        z-index: 10;
+    }
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        opacity: .8;
+    }
+    100% {
+        transform: rotate(359deg);
+        opacity: 0;
+    
+    }
+}
+
+#content {
+    overflow:hidden;
+    animation: content 0ms 3400ms both;
+}
+
+@keyframes content {
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform:translateX(0);
+    }
+}

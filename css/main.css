@@ -1063,9 +1063,33 @@ main {
   font-size: 1.2em;
 }
 
+@media screen and (min-width: 768px) {
+  .diaporama-restaurant__headings {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .diaporama-restaurant__headings {
+    font-size: 1.3em;
+  }
+}
+
 .diaporama-restaurant__byline {
   font-size: 1em;
   font-weight: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .diaporama-restaurant__byline {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .diaporama-restaurant__byline {
+    font-size: 1.1em;
+  }
 }
 
 .diaporama-restaurant img {

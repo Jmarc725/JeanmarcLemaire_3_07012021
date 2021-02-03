@@ -123,7 +123,7 @@ main {
     padding-bottom: 40px;
     @include tablet-only {
         padding-top: 40px;
-        padding-bottom: 80px;;
+        padding-bottom: 80px;
     }
 }
 
@@ -140,6 +140,7 @@ main {
 .wrapper {
     width: 90%;
     margin: 0 auto;
+    
 }
 
 .diaporama-restaurant {
@@ -175,11 +176,23 @@ main {
 
     &__headings {
         font-size: 1.2em;
+        @include tablet-only {
+            font-size: 1em;
+        }
+        @include desktop-only {
+            font-size: 1.3em;
+        }
     }
     
     &__byline {
         font-size: 1em;
         font-weight: 100;
+        @include tablet-only {
+            font-size: 0.8em;
+        }
+        @include desktop-only {
+            font-size: 1.1em;;
+        }
     }
     
     & img {

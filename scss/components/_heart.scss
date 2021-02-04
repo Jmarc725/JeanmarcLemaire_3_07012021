@@ -14,12 +14,21 @@
             font-size: 2.2em;
         }
     }
-    
-    &:hover,
-    &:active {
-        transform: scale(1.3);
-        color: $primary;
+
+    .fa-heart::before {
+        transition: transform 1.5s;
     }
+
+    .fa-heart:hover::before {
+        color: red;
+    }
+    
+    // &:hover,
+    // &:active {
+    //             transform: scale(1.3);
+    //     color: $primary;
+    // }
 }
+
 
 

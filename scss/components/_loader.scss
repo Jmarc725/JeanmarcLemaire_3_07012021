@@ -8,8 +8,13 @@
     border-left-color: lighten($primary, 30);
     border-right-color: lighten($primary, 30);
     position: absolute;
-    top: 50%;
-    left: 50%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0; 
+    right: 0;
+    // top: 50%;
+    // left: 50%;
     width: 150px;
     height: 150px;
     z-index: 1;

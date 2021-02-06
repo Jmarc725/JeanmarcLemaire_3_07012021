@@ -84,21 +84,42 @@ a {
 
 /* Heart */
 .heart {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   margin-right: 20px;
   cursor: pointer;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
+@media screen and (min-width: 1024px) {
+  .heart {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .heart--bigger {
-  width: 40px;
-  height: 40px;
+  width: 27px;
+  height: 27px;
+}
+
+@media screen and (min-width: 768px) {
+  .heart--bigger {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heart--bigger {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .heart path {
-  fill: white;
+  fill: transparent;
   stroke: #000;
   stroke-width: 6px;
   -webkit-transition: 1s;

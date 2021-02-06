@@ -1,25 +1,48 @@
 /* Heart */
 
-.fa-heart {
-    margin-right: 15px;
-    font-size: 1.4em;
-    font-weight: 200;
+// .fa-heart {
+//     margin-right: 15px;
+//     font-size: 1.4em;
+//     font-weight: 200;
+//     cursor: pointer;
+//     transition: transform 1.5s;
+    
+//     &--bigger {
+//         margin-right: 20px;
+//         font-size: 1.5em;    
+//         @include tablet-only {
+//             font-size: 2.2em;
+//         }
+//     }
+    
+//     &:hover,
+//     &:active {
+//                 transform: scale(1.3);
+//         color: $primary;
+//     }
+// }
+
+
+.heart {
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    transition: transform 1.5s;
-    
-    &--bigger {
-        margin-right: 20px;
-        font-size: 1.5em;    
-        @include tablet-only {
-            font-size: 2.2em;
-        }
-    }
-    
-    &:hover,
-    &:active {
-                transform: scale(1.3);
-        color: $primary;
-    }
+    transition: .4s;
+}
+  
+.heart path {
+    fill: white;
+    stroke: #000;
+    stroke-width: 4px;
+    transition: .4s;
+}
+  
+.heart:hover {
+    transform: scale(1.2);
+}
+  
+.heart:hover path {
+    fill: tomato;
 }
 
 

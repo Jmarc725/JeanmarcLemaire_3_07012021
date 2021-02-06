@@ -84,28 +84,34 @@ a {
 
 /* Heart */
 .heart {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
   cursor: pointer;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.heart--bigger {
+  width: 40px;
+  height: 40px;
 }
 
 .heart path {
   fill: white;
   stroke: #000;
-  stroke-width: 4px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  stroke-width: 6px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.heart:hover {
+.heart:active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.heart:hover path {
-  fill: tomato;
+.heart:active path {
+  fill: #9356DC;
 }
 
 /* Animation loader Home */

@@ -88,8 +88,10 @@ a {
   height: 24px;
   margin-right: 20px;
   cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1137,6 +1139,12 @@ main {
 @media screen and (min-width: 1200px) {
   .diaporama-restaurant img {
     height: 260px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .diaporama-restaurant img {
+    height: 320px;
   }
 }
 

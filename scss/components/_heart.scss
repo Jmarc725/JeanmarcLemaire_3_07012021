@@ -5,7 +5,7 @@
     height: 24px;
     margin-right: 20px;
     cursor: pointer;
-    transition: 1s;
+    transition: transform 1s;
     @include desktop-only {
         width: 30px;
         height: 30px;

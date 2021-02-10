@@ -773,6 +773,13 @@ section p {
   }
 }
 
+.menu__items:active .plat__garniture {
+  text-overflow: ellipsis;
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .plat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -789,7 +796,6 @@ section p {
 .plat__heading {
   font-size: 1.1em;
   font-weight: 500;
-  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -815,6 +821,10 @@ section p {
 .plat__garniture {
   font-size: 0.9em;
   font-weight: 100;
+  text-overflow: ellipsis;
+  width: 260px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) {

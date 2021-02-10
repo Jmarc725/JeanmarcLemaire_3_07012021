@@ -8,14 +8,16 @@
     &__heading {
         font-size: 1.1em;
         font-weight: 500;
+        margin-top: 14px;
+        margin-bottom: 5px;
         @include tablet-only {
             font-size: 1.5em;
             
         }
 
-        &--margin {
-            padding-top: 8px;
-        }
+        // &--margin {
+        //     padding-top: 8px;
+        // }
         &--condensed {
             font-size: 1em;
             @include tablet-only {
@@ -27,6 +29,8 @@
     &__garniture {
         font-size: 0.9em;
         font-weight: 100;
+        margin-top: 8px;
+        margin-bottom: 12px;
         text-overflow: ellipsis;
         width: 260px;
         overflow: hidden;
@@ -37,11 +41,11 @@
         }
     
             
-        &--interlignage {
-            margin-top: -8px;
-            line-height: 1.4em;
-            margin-bottom: 10px;
-        }  
+        // &--interlignage {
+        //     // margin-top: -8px;
+        //     line-height: 0.7em;
+        //     margin-bottom: 10px;
+        // }  
 
         &--condensed {
             font-size: 0.85em;

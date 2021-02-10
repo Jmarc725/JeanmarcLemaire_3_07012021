@@ -631,7 +631,6 @@ section p {
           align-items: flex-end;
   position: relative;
   cursor: pointer;
-  line-height: 0.5em;
   margin: 0;
   background-color: white;
   padding-left: 12px;
@@ -796,16 +795,14 @@ section p {
 .plat__heading {
   font-size: 1.1em;
   font-weight: 500;
+  margin-top: 14px;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
   .plat__heading {
     font-size: 1.5em;
   }
-}
-
-.plat__heading--margin {
-  padding-top: 8px;
 }
 
 .plat__heading--condensed {
@@ -821,6 +818,8 @@ section p {
 .plat__garniture {
   font-size: 0.9em;
   font-weight: 100;
+  margin-top: 8px;
+  margin-bottom: 12px;
   text-overflow: ellipsis;
   width: 260px;
   overflow: hidden;
@@ -831,12 +830,6 @@ section p {
   .plat__garniture {
     font-size: 1.3em;
   }
-}
-
-.plat__garniture--interlignage {
-  margin-top: -8px;
-  line-height: 1.4em;
-  margin-bottom: 10px;
 }
 
 .plat__garniture--condensed {

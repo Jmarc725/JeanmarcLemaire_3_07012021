@@ -779,6 +779,12 @@ section p {
   white-space: nowrap;
 }
 
+@media screen and (min-width: 768px) {
+  .menu__items:active .plat__garniture {
+    width: auto;
+  }
+}
+
 .plat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -828,6 +834,7 @@ section p {
 
 @media screen and (min-width: 768px) {
   .plat__garniture {
+    width: auto;
     font-size: 1.3em;
   }
 }

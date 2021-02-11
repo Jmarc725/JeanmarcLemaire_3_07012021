@@ -162,7 +162,7 @@
 
 .dish-confirmation {
     width: 65px;
-    height: 68px;
+    height: 70px;
     background-color: $tertiary;
     border-radius: 0 20px 20px 0;
     @include tablet-only {
@@ -185,7 +185,7 @@
 
 .menu__items:active .plat__garniture {
 text-overflow: ellipsis;
-width: 220px;
+width: 200px;
 overflow: hidden;
 white-space: nowrap;
 }

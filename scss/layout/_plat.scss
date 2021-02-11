@@ -57,6 +57,7 @@
 
     &__prix {
         margin-right: -47px;
+        margin-bottom: 12px;
         @include tablet-only {
             font-size: 1.3em;
         }

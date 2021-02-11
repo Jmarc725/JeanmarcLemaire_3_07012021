@@ -745,7 +745,7 @@ section p {
 
 .dish-confirmation {
   width: 65px;
-  height: 68px;
+  height: 70px;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
 }
@@ -774,7 +774,7 @@ section p {
 
 .menu__items:active .plat__garniture {
   text-overflow: ellipsis;
-  width: 220px;
+  width: 200px;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -844,6 +844,7 @@ section p {
 
 .plat__prix {
   margin-right: -47px;
+  margin-bottom: 12px;
 }
 
 @media screen and (min-width: 768px) {
